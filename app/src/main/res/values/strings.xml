@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Projet Tabata</string>
+
+    <string name="main_list">Liste des entrainements</string>
+    <string name="main_create">Créer</string>
+    <string name="main_delete">Supprimer</string>
+    <string name="main_modify">Modify</string>
+    <string name="main_start">Lancer</string>
+
+    <string name="modify_name">Nom</string>
+    <string name="modify_prepare">Préparation (:1 -> 99:59 ou 1 -> 5999)</string>
+    <string name="modify_main_cycles">Cycles travail/repos/repos long (1 -> 99)</string>
+    <string name="modify_sub_cycles">Cycles travaille/repos (1 -> 99)</string>
+    <string name="modify_work">Travail (:1 -> 99:59 ou 1 -> 5999)</string>
+    <string name="modify_rest">Repos (:1 -> 99:59 ou 1 -> 5999)</string>
+    <string name="modify_long_rest">Long Repos (:1 -> 99:59 ou 1 -> 5999)</string>
+    <string name="modify_back">&lt;</string>
+    <string name="modify_confirm">✓</string>
+    <string name="modify_new">Nouveau</string>
+
+    <string name="training_back">&lt;</string>
+    <string name="training_pause_off">=</string>
+    <string name="training_pause_on">&gt;</string>
+    <string name="training_previous">|&lt;</string>
+    <string name="training_next">&gt;|</string>
+    <string name="training_stop">STOP</string>
+</resources>

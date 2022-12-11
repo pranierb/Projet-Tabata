@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="?android:attr/activatedBackgroundIndicator">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_list"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="602dp"
+        android:id="@+id/lstTask"
+        android:choiceMode="singleChoice">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnCreate"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnCreateOnClick"
+                android:text="@string/main_create"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnDel"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnDelOnClick"
+                android:text="@string/main_delete"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnMod"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnModOnClick"
+                android:text="@string/main_modify"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnStartOnClick"
+                android:text="@string/main_start"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

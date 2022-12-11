@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Modify">
+
+    <TextView
+        android:id="@+id/txtTrainingName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modify_name"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inpName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Entrainement"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modify_prepare"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inpPreparation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="00:20"
+                android:ems="10"
+                android:inputType="time"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modify_main_cycles"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inpMainCycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="2"
+                android:ems="10"
+                android:inputType="time"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modify_sub_cycles"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inpSubCycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="3"
+                android:ems="10"
+                android:inputType="time"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modify_work"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inpWork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="00:10"
+                android:ems="10"
+                android:inputType="time"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modify_rest"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inpRest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="00:05"
+                android:ems="10"
+                android:inputType="time"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modify_long_rest"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inpLongRest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="00:10"
+                android:ems="10"
+                android:inputType="time"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/modify_back"
+            android:onClick="btnBackOnClick"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/modify_confirm"
+            android:onClick="btnConfirmOnClick"
+            android:textSize="30sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>
